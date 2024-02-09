@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+
+.bg__body {
+    margin: 0;
+    background-color: #f4f1de;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form__section,
+.contact__section {
+    background-color: #f2cc8f;
+    width: 95%;
+    max-width: 550px;
+    margin: 15px auto;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.form__container,
+.contact__container {
+    margin: 10px;
+    text-align: center;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f1de;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.inputs__container {
+    width: 95%;
+    margin: auto;
+}
+
+.input__style {
+    width: 90%;
+    margin: 25px auto 0 auto;
+    padding: 10px 5px;
+    border: 1px solid #81b29a;
+    border-radius: 5px;
+    background-color: #f4f1de;
+    position: relative;
+}
+
+.input__style:focus-visible {
+    outline: #699982 auto 1px !important;
+}
+
+input {
+    font-family: "Montserrat", sans-serif;
+}
+
+.form__saveButton {
+    width: 90%;
+    border: 1px solid #699982;
+    border-radius: 5px;
+    padding: 10px 5px;
+    background-color: #81b29a;
+    color: #f4f1de;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 1px 1px 3px #2d2c2c;
+}
+
+.form__saveButton:hover {
+    background-color: #699982;
+}
+
+.form__saveButton:active {
+    box-shadow: none;
+}
+
+.info__container {
+    width: 75%;
+    text-align: left;
+}
+
+.button__container {
+    width: 20%;
+    text-align: right;
+}
+
+.info__name {
+    margin: 10px 0 4px 0;
+    font-size: 18px;
+}
+.info__mail,
+.info__date {
+    color: grey;
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.fa-solid {
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #2d2c2c;
+}
+
+.fa-solid:active {
+    box-shadow: none;
+}
+
+.fa-pen-to-square {
+    color: #3d405b;
+}
+
+.fa-pen-to-square:hover {
+    color: #646996;
+}
+
+.fa-trash-can {
+    color: #e07a5f;
+}
+
+.fa-trash-can:hover {
+    color: #f38769;
+}
+
+#editFormModal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#editForm {
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background-color: #f2cc8f;
+    padding: 30px 0;
+    border-radius: 10px;
+    opacity: 0;
+    transition-duration: 0.2s;
+}
+
+.errMsg {
+    color: white;
+    width: 240px;
+    background-color: #e07a5f;
+    border-radius: 10px;
+    position: absolute;
+    padding: 4px 0;
+    opacity: 0;
+    margin: 7px;
+    z-index: 1;
+    transition-duration: 0.2s;
+}
+
+.errMsg::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #e07a5f;
+    position: absolute;
+    top: -10px;
+    left: 17px;
+}
+
+#successModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #f2cc8f;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #3d405b;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #e07a5f;
+    text-decoration: none;
+}
+
+.msjEmpty {
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desafío 16 - Nicolás Bobb</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="bg__body">
+        <section class="form__section">
+            <form id="addForm" class="form__container">
+                <h1>Ingrese los datos de su contacto</h1>
+                <div class="inputs__container">
+                    <input
+                        id="name"
+                        class="input__style"
+                        type="text"
+                        placeholder="Nombre"
+                    />
+                    <p id="nameError" class="errMsg"></p>
+                    <input
+                        id="email"
+                        class="input__style"
+                        type="email"
+                        placeholder="Email"
+                    />
+                    <p id="emailError" class="errMsg"></p>
+                    <input id="date" class="input__style" type="date" />
+                    <p id="dateError" class="errMsg"></p>
+                </div>
+                <button type="submit" class="form__saveButton">Guardar</button>
+            </form>
+        </section>
+        <section id="contact" class="contact__section">
+            <div class="contact__container">
+                <div class="info__container">
+                    <h2 class="info__name">Nicolas Alejandro Bobb</h2>
+                    <h3 class="info__mail">mail@mail</h3>
+                    <h3 class="info__date">13/1/12</h3>
+                </div>
+                <div class="button__container">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="contact__container">
+                <div class="info__container">
+                    <h2 class="info__name">Nicolas Alejandro Bobb</h2>
+                    <h3 class="info__mail">mail@mail</h3>
+                    <h3 class="info__date">13/1/12</h3>
+                </div>
+                <div class="button__container">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </div>
+            </div>
+        </section>
+        <div id="editFormModal">
+            <form id="editForm" class="form__container">
+                <h2>Editar contacto</h2>
+                <div class="inputs__container">
+                    <input
+                        id="nameEdit"
+                        class="input__style"
+                        type="text"
+                        placeholder="Nombre"
+                    />
+                    <p id="nameEditError" class="errMsg"></p>
+                    <input
+                        id="emailEdit"
+                        class="input__style"
+                        type="email"
+                        placeholder="Email"
+                    />
+                    <p id="emailEditError" class="errMsg"></p>
+                    <input id="dateEdit" class="input__style" type="date" />
+                    <p id="dateEditError" class="errMsg"></p>
+                </div>
+                <button type="submit" class="form__saveButton">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="successMessage">¡La operación se realizó con éxito!</p>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
